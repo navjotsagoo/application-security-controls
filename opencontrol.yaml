@@ -5,7 +5,7 @@ metadata:
   maintainers:
     - tom.robberts@us.af.mil
 components:
-  - ./CM_Policy
-  - ./IA_Policy
-  - ./PL_Policy
-  - ./RA_Policy
+  - ./CM_App_Policy
+  - ./IA_App_Policy
+  - ./PL_App_Policy
+  - ./RA_App_Policy
