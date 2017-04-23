@@ -1,0 +1,57 @@
+name: Configuration Management Policy for Application
+schema_version: 3.0.0
+documentation_complete: true
+satisfies:
+- control_key: CM-10
+  standard_key: NIST-800-53
+  implementation_status: complete
+  narrative:
+  - key: a
+    text: |
+      Application configuration management is handled by Spring Cloud Config.
+  - key: b
+    text: |
+      Application releases are managed in a source control repository hosted by DI2E Framework.
+  covered_by: []
+- control_key: CM-11
+  standard_key: NIST-800-53
+  implementation_status: partial
+  narrative:
+  - key: a
+    text: |
+      Explain how the control is implemented
+  - key: b
+    text: |
+      Explain how the transitive controls (sub-controls) are implemented.
+  covered_by: []
+- control_key: CM-4
+  standard_key: NIST-800-53
+  implementation_status: partial
+  narrative:
+  - key: a
+    text: |
+      Explain how the control is implemented
+  - key: b
+    text: |
+      Explain how the transitive controls (sub-controls) are implemented.
+  covered_by: []
+- control_key: CM-7
+  standard_key: NIST-800-53
+  implementation_status: partial
+  narrative:
+  - key: a
+    text: |
+      Explain how the control is implemented
+  - key: b
+    text: |
+      Explain how the transitive controls (sub-controls) are implemented.
+  covered_by: []
+verifications:
+- key: POLICY_DOC
+  name: Policy document
+  path: https://github.com/nsagoo-pivotal/app-compliance-docs/blob/master/CM-Policy.md
+  type: URL
+- description: "GIVEN the github link - <policy> THEN the policy has been updated \n"
+  key: Policy_Update_Test
+  last_run: 2017-04-07 13:25:17.581078
+  name: App Policy update
