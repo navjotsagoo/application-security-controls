@@ -1,0 +1,11 @@
+schema_version: "1.0.0"
+name: Application-MSAT
+metadata:
+  description: "Security Controls for application to achieve ATO"
+  maintainers:
+    - tom.robberts@us.af.mil
+components:
+  - ./CM_Policy
+  - ./IA_Policy
+  - ./PL_Policy
+  - ./RA_Policy
