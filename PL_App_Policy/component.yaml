@@ -9,9 +9,17 @@ satisfies:
   - key: a
     text: |
       The application inherts most of the security controls all the way to the container from the platform.
-      Application passed the security analysis for vulnerabilitie through HP Fortify & other code vulnerability scanning tools. 
+      Application passed the security analysis for vulnerabilitie through HP Fortify & other code vulnerability scanning tools.
   covered_by: []
-
+- control_key: PL-2
+  standard_key: NIST-800-53
+  implementation_status: complete
+  narrative:
+  - key: a
+    text: |
+      The application inherts most of the security controls all the way to the container from the platform.
+      Application passed the security analysis for vulnerabilitie through HP Fortify & other code vulnerability scanning tools.
+  covered_by: []
 verifications:
 - key: POLICY_DOC
   name: Policy document
