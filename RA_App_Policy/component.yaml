@@ -1,0 +1,40 @@
+name: Risk Assessment Policy for Application
+schema_version: 3.0.0
+documentation_complete: true
+satisfies:
+- control_key: RA-2
+  standard_key: NIST-800-53
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        We conduct monthly web application scanning; quarterly database scanning; and, Web application scanning with every code release. We conduct internal vulnerability scanning of its VPC and private subnets within the 18F Virtual Private Cloud.
+    - key: b
+      text: |
+        Our vulnerability scanning tools utilize techniques that promote interoperability such as Common Vulnerability Scoring System v2 (CVSS2), Common Platform Enumeration (CPE), and Common Vulnerability Enumeration (CVE) and OWASP TOP 10 vulnerabilities.
+        Pivotal commits to monitoring for CVEs for the OS and application runtime and make them available within 48 hours.
+        Cloud Foundry deploys updates and patches in a rolling manner without any downtime for the apps or the platform.
+    - key: c
+      text: |
+        We analyzes vulnerability scan reports from its vulnerability scanning tools assessments at least weekly and appropriate actions taken on discovery of vulnerabilities within the Cloud Infrastructure and applications and from security control assessments conducted on its information systems.
+  standard_key: NIST-800-53
+- control_key: RA-3
+  standard_key: NIST-800-53
+  implementation_status: complete
+  narrative:
+    - key: d
+      text: |
+        High-risk vulnerabilities are mitigated within thirty days (30); moderate risk vulnerabilities mitigated within ninety days (90). If the recommended steps will adversely impact functionality or performance, the ISSO/ISSM will reviews changes and mitigating controls with 18F DevOps as well as the Cloud Foundry system owners.
+    - key: e
+      text: |
+        We shares information obtained from the vulnerability scanning process and security control assessments with designated System Owners, DevOps, GSA SecOps, ISSM and the Authorizing Official (AO) to help eliminate similar vulnerabilities in other information systems (i.e., systemic weaknesses or deficiencies).
+  covered_by: []
+verifications:
+- key: POLICY_DOC
+  name: Policy document
+  path: https://github.com/nsagoo-pivotal/app-compliance-docs/blob/master/CM-Policy.md
+  type: URL
+- description: "GIVEN the github link - <policy> THEN the policy has been updated \n"
+  key: Policy_Update_Test
+  last_run: 2017-04-07 13:25:17.581078
+  name: App Policy update

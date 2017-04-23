@@ -1,0 +1,25 @@
+name: Identification and Authentication Policy for Application
+schema_version: 3.0.0
+documentation_complete: true
+satisfies:
+- control_key: IA-6
+  standard_key: NIST-800-53
+  implementation_status: partial
+  narrative:
+  - key: a
+    text: |
+      Application identification and authentication is handled via PKI.
+  - key: b
+    text: |
+      PKI is handled external to the application by the F5 load balancer configured with the platform. 
+  covered_by: []
+
+verifications:
+- key: POLICY_DOC
+  name: Policy document
+  path: https://github.com/nsagoo-pivotal/app-compliance-docs/blob/master/CM-Policy.md
+  type: URL
+- description: "GIVEN the github link - <policy> THEN the policy has been updated \n"
+  key: Policy_Update_Test
+  last_run: 2017-04-07 13:25:17.581078
+  name: App Policy update
